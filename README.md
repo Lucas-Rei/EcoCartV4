@@ -4,6 +4,10 @@ This is a prototype of the app EcoCart, an app that is designed to track the car
 
 The design team's members are Lucas Wang, Ishan Burma, Ryan Abou Fakhr, and Rubin Gitalis.
 
+Project Manager - Clarke Needles
+Client - Kaja Christensen and Alex Pessoa
+Faculty Advisor - Thomas Dean
+
 ## Main Features:
 - The main dashboard, which displays the user's sustainability score for the month
 - A graph that displays the change in the user's score over time
@@ -36,5 +40,12 @@ The design team's members are Lucas Wang, Ishan Burma, Ryan Abou Fakhr, and Rubi
 
 ## Maintenance and Usability:
 
-The comments within the .tsx files should be sufficient for understanding the code. Most modification will likely need to be done in the /app/_layout.tsx file, where the SQLite database is initialized.
+The comments within the .tsx files should be sufficient for understanding the code. Most modification will likely need to be done in the /app/_layout.tsx file, where the SQLite database is initialized. 
 
+Messages about code or continued development of the project should be directed to Lucas Wang and Ishan Burma.
+
+## Contact us!
+Lucas Wang - 24kmn3@queensu.ca
+Ishan Burma - 24mm43@queensu.ca
+Ryan Abou Fakhr - 24vcw2@queensu.ca
+Rubin Gitalis - 24bkv3@queensu.ca
