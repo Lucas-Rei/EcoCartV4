@@ -1,35 +1,43 @@
-import { Tabs } from 'expo-router';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Tabs } from "expo-router";
 import React from 'react';
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+export default function TabsLayout() {
+    // (deprecated, old feature) function that returns the header right component, which is a button that navigates to the profile screen when pressed
+    // const headerRight = () => {
+    //     return (
+    //     <TouchableOpacity style={{ marginRight: 20 }} onPress={() => router.push("/profile")}>
+    //         <Ionicons name="people" size={24} color="#FFFFFF" />
+    //     </TouchableOpacity>
+    //     );
+    // };
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+    return <Tabs
+        // Header properties
+        screenOptions={{ 
+            tabBarActiveTintColor: "#064E3B",
+            headerStyle: { backgroundColor: "#064E3B" },
+            headerShadowVisible: false,
+            headerTintColor: "#FFFFFF",
+            tabBarStyle: { backgroundColor: "#e1f6e6" },
+            // headerRight: () => headerRight()
         }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
+    >
+        {/* The three bottom row buttons */}
+        <Tabs.Screen 
+            name="index" 
+            options={{ title: "Home", tabBarIcon: ({ color }) => 
+            <Ionicons name="home" color={color} size={24} /> }} 
+        />
+        <Tabs.Screen 
+            name="add_products" 
+            options={{ title: "Add Products", tabBarIcon: ({ color }) => 
+            <Ionicons name="add" color={color} size={24} /> }} 
+        />
+        <Tabs.Screen 
+            name="friends" 
+            options={{ title: "Friends", tabBarIcon: ({ color }) => 
+            <Ionicons name="people" color={color} size={24} /> }} 
+        />
     </Tabs>
-  );
 }
