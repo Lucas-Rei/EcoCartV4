@@ -4,9 +4,9 @@ This is a prototype of the app EcoCart, an app that is designed to track the car
 
 The design team's members are Lucas Wang, Ishan Burma, Ryan Abou Fakhr, and Rubin Gitalis.
 
-Project Manager - Clarke Needles
-Client - Kaja Christensen and Alex Pessoa
-Faculty Advisor - Thomas Dean
+- Project Manager - Clarke Needles
+- Client - Kaja Christensen and Alex Pessoa
+- Faculty Advisor - Thomas Dean
 
 ## Main Features:
 - The main dashboard, which displays the user's sustainability score for the month
