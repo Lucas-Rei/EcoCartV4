@@ -9,7 +9,7 @@ export default function RootLayout() {
     await db.execAsync("CREATE TABLE IF NOT EXISTS products (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, score REAL, image TEXT);");
 
     // Each account has a scores table and friends table that it's connected to
-    // Currently friends table is not in use
+    // Currently friends table is not in use.
     await db.execAsync("CREATE TABLE IF NOT EXISTS accounts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);");
     await db.execAsync("CREATE TABLE IF NOT EXISTS scores (id INTEGER PRIMARY KEY AUTOINCREMENT, account_id INTEGER, score REAL, FOREIGN KEY(account_id) REFERENCES accounts(id));");
     await db.execAsync("CREATE TABLE IF NOT EXISTS friends (id INTEGER PRIMARY KEY AUTOINCREMENT, account_id INTEGER, friend_account_id INTEGER, FOREIGN KEY(account_id) REFERENCES accounts(id), FOREIGN KEY(friend_account_id) REFERENCES accounts(id));");
