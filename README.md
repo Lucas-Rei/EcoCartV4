@@ -1,13 +1,27 @@
-# Welcome to your Expo app 👋
+# EcoCart (APSC-103 Group 888-A, First Year Project)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a prototype of the app EcoCart, an app that is designed to track the carbon impact of what you buy and encourage you to practice more sustainable shopping habits. It was commisioned by Queen's Project on International Development (QPID). As of April 20th, 2026, this code and git repo has been shared with QPID.
 
-## Get started
+The design team's members are Lucas Wang, Ishan Burma, Ryan Abou Fakhr, and Rubin Gitalis.
+
+## Main Features:
+- The main dashboard, which displays the user's sustainability score for the month
+- A graph that displays the change in the user's score over time
+- An "Add Products" page where the user can add a selection of products they've bought to their "EcoCart"
+- A friends page where you can compare you score with those of your friends
+
+## Areas to Develop (Features to add for upscaling):
+- Upgrade to a cloud hosted database for more security and app functionality (real accounts, functional friending system)
+- Collaborate with local Kingston grocery stores to get real data on their groceries, making the app more accurate
+
+## To use the app:
 
 1. Install dependencies
 
    ```bash
    npm install
+   npx expo install expo-sqlite
+   npx expo install react-native-chart-kit
    ```
 
 2. Start the app
@@ -16,35 +30,11 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Open the app in Expo Go.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [Expo Go](https://expo.dev/go)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Maintenance and Usability:
 
-## Get a fresh project
+The comments within the .tsx files should be sufficient for understanding the code. Most modification will likely need to be done in the /app/_layout.tsx file, where the SQLite database is initialized.
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
