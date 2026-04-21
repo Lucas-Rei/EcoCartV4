@@ -45,7 +45,7 @@ The comments within the .tsx files should be sufficient for understanding the co
 Messages about code or continued development of the project should be directed to Lucas Wang and Ishan Burma.
 
 ## Contact us!
-Lucas Wang - 24kmn3@queensu.ca
-Ishan Burma - 24mm43@queensu.ca
-Ryan Abou Fakhr - 24vcw2@queensu.ca
-Rubin Gitalis - 24bkv3@queensu.ca
+- Lucas Wang - 24kmn3@queensu.ca
+- Ishan Burma - 24mm43@queensu.ca
+- Ryan Abou Fakhr - 24vcw2@queensu.ca
+- Rubin Gitalis - 24bkv3@queensu.ca
